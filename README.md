@@ -1,1 +1,1 @@
-# Self6D++
+# Self6D
