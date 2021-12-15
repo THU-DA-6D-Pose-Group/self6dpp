@@ -1,4 +1,4 @@
-# Self6D++:
+# Self6D++
 
 This repo provides the PyTorch implementation of the work:
 
