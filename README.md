@@ -2,7 +2,7 @@
 
 This repo provides the PyTorch implementation of the work:
 
-**Gu Wang $\dagger$, Fabian Manhardt $\dagger$, Xingyu Liu, Xiangyang Ji, Federico Tombari. Occlusion-Aware Self-Supervised Monocular Object Pose Estimation. IEEE Transactions on Pattern Analysis and Machine Intelligence.**
+**Gu Wang &dagger;, Fabian Manhardt &dagger;, Xingyu Liu, Xiangyang Ji &#9993;, Federico Tombari. Occlusion-Aware Self-Supervised Monocular Object Pose Estimation. IEEE Transactions on Pattern Analysis and Machine Intelligence.**
 [[Paper](todo)][[bibtex](#Citation)]
 
 The code will be released soon.
