@@ -44,7 +44,8 @@ datasets/
     * `<config_path>` can be found at the directory `configs/`.
     * `<gpu_ids>` can be `0` or `1` for single-gpu training, or `0,1` for multi-gpu training. We use single-gpu training for all the experiments.
 
-* The trained models can be found at [Pan.Baidu](TODO).
+* The trained models can be found at [Pan.Baidu, pw: g1x6](https://pan.baidu.com/s/189T6j5OVFXiV7mbik441gQ?pwd=g1x6
+).
 
 
 ### Stage I: train the detector, pose estimator, and refiner using PBR synthetic data
