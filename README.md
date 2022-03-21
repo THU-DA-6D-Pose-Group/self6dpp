@@ -47,6 +47,8 @@ datasets/
 * The trained models can be found at [Pan.Baidu, pw: g1x6](https://pan.baidu.com/s/189T6j5OVFXiV7mbik441gQ?pwd=g1x6
 ).
 
+* Some other resources (including test bounding boxes and image set files) can be found at [Pan.Baidu, pw: 8nWC](https://pan.baidu.com/s/1lfVXryDPVv3ujCQzUETdjg?pwd=8nWC).
+
 
 ### Stage I: train the detector, pose estimator, and refiner using PBR synthetic data
 #### Train and test Yolov4:
