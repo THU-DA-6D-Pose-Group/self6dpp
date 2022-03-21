@@ -19,8 +19,6 @@ Download the 6D pose datasets (LINEMOD, Occluded LINEMOD, YCB-Video) from the
 [BOP website](https://bop.felk.cvut.cz/datasets/) and
 [VOC 2012](https://pjreddie.com/projects/pascal-voc-dataset-mirror/)
 for background images.
-Please also download the `image_sets` and `test_bboxes` from
-here ([BaiduNetDisk](https://pan.baidu.com/s/1gGoZGkuMYxhU9LBKxuSz0g), [OneDrive](https://1drv.ms/u/s!Ah83ZdJvIaBnnjqVy9Eyn0yxDb8i?e=0Q3qRU), password: qjfk).
 
 The structure of `datasets` folder should look like below:
 ```
@@ -47,7 +45,7 @@ datasets/
 * The trained models can be found at [Pan.Baidu, pw: g1x6](https://pan.baidu.com/s/189T6j5OVFXiV7mbik441gQ?pwd=g1x6
 ).
 
-* Some other resources (including test bounding boxes and image set files) can be found at [Pan.Baidu, pw: 8nWC](https://pan.baidu.com/s/1lfVXryDPVv3ujCQzUETdjg?pwd=8nWC).
+* Some other resources (including `test_bboxes` and `image_sets`) can be found at [Pan.Baidu, pw: 8nWC](https://pan.baidu.com/s/1lfVXryDPVv3ujCQzUETdjg?pwd=8nWC).
 
 
 ### Stage I: train the detector, pose estimator, and refiner using PBR synthetic data
