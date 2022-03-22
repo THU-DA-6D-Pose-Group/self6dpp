@@ -3,7 +3,7 @@
 This repo provides the PyTorch implementation of the work:
 
 **Gu Wang &dagger;, Fabian Manhardt &dagger;, Xingyu Liu, Xiangyang Ji &#9993;, Federico Tombari. Occlusion-Aware Self-Supervised Monocular 6D Object Pose Estimation. IEEE Transactions on Pattern Analysis and Machine Intelligence.**
-[[Paper](https://doi.org/10.1109/TPAMI.2021.3136301)][[bibtex](#Citation)]
+[[Paper](https://doi.org/10.1109/TPAMI.2021.3136301)][[arXiv](https://arxiv.org/abs/2203.10339)][[bibtex](#Citation)]
 
 ## Requirements
 * Ubuntu 16.04/18.04, CUDA 10.2, python >= 3.6, PyTorch >= 1.7.1, torchvision
