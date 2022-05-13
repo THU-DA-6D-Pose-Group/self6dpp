@@ -4,9 +4,9 @@ _base_ = ["./ss_dibr_mlBCE_FreezeBN_woCenter_refinePM10_benchvise.py"]
 OUTPUT_DIR = "output/self6dpp/ssHB/ss_dibr_mlBCE_FreezeBN_woCenter_refinePM10/driller"
 
 DATASETS = dict(
-    TRAIN=("hb_bdp_driller_train_lmK",),  # real data
+    TRAIN=("hb_bdp_driller_train",),  # real data
     TRAIN2=("lm_pbr_driller_train",),  # synthetic data
-    TEST=("hb_bdp_driller_test_lmK",),
+    TEST=("hb_bdp_driller_test",),
 )
 
 RENDERER = dict(DIFF_RENDERER="DIBR")  # DIBR | DIBR

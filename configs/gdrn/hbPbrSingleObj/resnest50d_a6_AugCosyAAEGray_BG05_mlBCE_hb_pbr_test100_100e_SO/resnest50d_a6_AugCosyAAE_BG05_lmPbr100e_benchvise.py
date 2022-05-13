@@ -45,7 +45,7 @@ SOLVER = dict(
 
 DATASETS = dict(
     TRAIN=("lm_pbr_benchvise_train",),
-    TEST=("hb_bdp_benchvise_test100_lmK",),
+    TEST=("hb_bdp_benchvise_test100",),
     DET_FILES_TEST=(
         "datasets/hb_bench_driller_phone/test_bboxes/yolov4x_640_augCosyAAEGray_ranger_lm_pbr_hb_bdp_all.json",
     ),

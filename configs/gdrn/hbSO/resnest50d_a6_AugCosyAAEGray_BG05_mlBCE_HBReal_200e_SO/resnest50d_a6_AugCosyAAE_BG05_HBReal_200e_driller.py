@@ -3,8 +3,8 @@ _base_ = ["./resnest50d_a6_AugCosyAAE_BG05_HBReal_200e_benchvise.py"]
 OUTPUT_DIR = "output/gdrn/hbSO/resnest50d_a6_AugCosyAAEGray_BG05_mlBCE_HBReal_200e/driller"
 
 DATASETS = dict(
-    TRAIN=("hb_bdp_driller_train_lmK",),
-    TEST=("hb_bdp_driller_test_lmK",),
+    TRAIN=("hb_bdp_driller_train",),
+    TEST=("hb_bdp_driller_test",),
 )
 
 MODEL = dict(

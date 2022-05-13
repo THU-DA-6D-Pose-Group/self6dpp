@@ -4,5 +4,5 @@ OUTPUT_DIR = "output/gdrn/hb_pbr/resnest50d_a6_AugCosyAAEGray_BG05_mlBCE_lm_pbr_
 
 DATASETS = dict(
     TRAIN=("lm_pbr_driller_train",),
-    TEST=("hb_bdp_driller_test100_lmK",),
+    TEST=("hb_bdp_driller_test100",),
 )

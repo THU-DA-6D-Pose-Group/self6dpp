@@ -4,9 +4,9 @@ _base_ = ["./ss_dibr_mlBCE_FreezeBN_woCenter_woDepth_refinePM10_10e_train360_ben
 OUTPUT_DIR = "output/self6dpp/ssHB/ss_dibr_mlBCE_FreezeBN_woCenter_woDepth_refinePM10_10e_train360/phone"
 
 DATASETS = dict(
-    TRAIN=("hb_bdp_phone_train360_lmK",),  # real data
+    TRAIN=("hb_bdp_phone_train360",),  # real data
     TRAIN2=("lm_pbr_phone_train",),  # synthetic data
-    TEST=("hb_bdp_phone_test100_lmK",),
+    TEST=("hb_bdp_phone_test100",),
 )
 
 RENDERER = dict(DIFF_RENDERER="DIBR")  # DIBR | DIBR

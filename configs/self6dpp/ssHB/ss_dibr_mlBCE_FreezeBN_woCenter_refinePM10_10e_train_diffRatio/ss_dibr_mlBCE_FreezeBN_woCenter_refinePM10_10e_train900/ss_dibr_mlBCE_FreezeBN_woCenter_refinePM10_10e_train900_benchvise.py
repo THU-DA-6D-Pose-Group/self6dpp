@@ -47,10 +47,10 @@ SOLVER = dict(
 )
 
 DATASETS = dict(
-    TRAIN=("hb_bdp_benchvise_train900_lmK",),  # real data
+    TRAIN=("hb_bdp_benchvise_train900",),  # real data
     TRAIN2=("lm_pbr_benchvise_train",),  # synthetic data
     TRAIN2_RATIO=0.0,
-    TEST=("hb_bdp_benchvise_test100_lmK",),
+    TEST=("hb_bdp_benchvise_test100",),
     # for self-supervised training
     DET_FILES_TRAIN=(
         "datasets/hb_bench_driller_phone/init_poses/resnest50d_a6_AugCosyAAEGray_BG05_mlBCE_lm_pbr_100e_so_GdrnPose_wYolov4PbrBbox_wDeepimPose_hbBdpAll.json",

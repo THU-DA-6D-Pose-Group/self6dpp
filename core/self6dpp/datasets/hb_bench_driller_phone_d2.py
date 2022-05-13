@@ -43,7 +43,7 @@ class HB_BenchDrillerPhone:
         self.models_root = data_cfg["models_root"]  # models_lm
         self.scale_to_meter = data_cfg["scale_to_meter"]
 
-        # use the images with converted K
+        cam_type = data_cfg["cam_type"]
         assert cam_type in ["linemod", "hb"]
         self.cam_type = cam_type
         if cam_type == "linemod":  # linemod K
@@ -55,6 +55,7 @@ class HB_BenchDrillerPhone:
                 ],
                 dtype="float32",
             )
+            # use the images with converted K
             self.rgb_root = osp.join(dataset_root, "sequence/rgb_lmK")
             self.depth_root = osp.join(dataset_root, "sequence/depth_lmK")
             self.mask_visib_root = osp.join(dataset_root, "sequence/mask_visib_lmK")

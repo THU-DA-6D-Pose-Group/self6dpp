@@ -67,7 +67,7 @@ SOLVER = dict(
 
 DATASETS = dict(
     TRAIN=("lm_pbr_13_train",),
-    TEST=("hb2lm_benchvise_driller_phone_test_lmK",),
+    TEST=("hb_benchvise_driller_phone_test",),
 )
 
 NUM_CLASSES = 13
