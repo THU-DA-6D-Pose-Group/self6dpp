@@ -157,8 +157,6 @@ def main(args):
         render_gpu_id = comm.get_local_rank()
         # ren = get_egl_renderer(cfg, data_ref, obj_names=train_obj_names, gpu_id=render_gpu_id)
         if cfg.RENDERER.DIFF_RENDERER == "DIBR":
-            ren_models, ren = get_DIBR_models_renderer(cfg, data_ref, obj_names=train_obj_names, gpu_id=render_gpu_id)
-        elif cfg.RENDERER.DIFF_RENDERER == "DIBR":
             ren_models, ren = get_dibr_models_renderer(cfg, data_ref, obj_names=train_obj_names, gpu_id=render_gpu_id)
         else:
             raise ValueError("Unknown differentiable renderer type")

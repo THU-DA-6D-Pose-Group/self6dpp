@@ -64,20 +64,11 @@ def compute_self_loss(
     # for rendering data
     im_H, im_W = batch["gt_img"].shape[-2:]
     batch["K_renderer"] = batch["roi_cam"].clone()
-    if cfg.RENDERER.DIFF_RENDERER == "DIBR":
-        batch["K_renderer"][:, 1, 2] += cfg.RENDERER.DIBR.V_OFFSET  # HACK: DIBR renderer has some v offset bug!!
 
     # get rendered mask/rgb/depth/xyz using DIBR
     cur_models = [ren_models[int(_l)] for _l in batch["roi_cls"]]
 
     if cfg.RENDERER.DIFF_RENDERER == "DIBR":
-        ren_func = {
-            "batch": partial(ren.render_batch, antialias=True),
-            "batch_single": partial(ren.render_batch_single, antialias=True),
-            "batch_tex": partial(ren.render_batch_tex, max_mip_level=9, uv_type="vertex"),
-            "batch_single_tex": partial(ren.render_batch_single_tex, max_mip_level=9, uv_type="vertex"),
-        }[cfg.RENDERER.RENDER_TYPE]
-    elif cfg.RENDERER.DIFF_RENDERER == "DIBR":
         ren_func = {"batch": partial(ren.render_batch), "batch_tex": partial(ren.render_batch_tex, uv_type="face")}[
             cfg.RENDERER.RENDER_TYPE
         ]
@@ -616,32 +607,6 @@ def batch_data_test_self(cfg, data, device="cuda"):
             batch[key] = list(itertools.chain(*[d[key] for d in data]))
 
     return batch
-
-
-def get_DIBR_models_renderer(cfg, data_ref, obj_names, output_db=True, gpu_id=None):
-    """
-    Args:
-        output_db (bool): Compute and output image-space derivates of barycentrics.
-    """
-    from lib.dr_utils.DIBR.renderer_DIBR import load_ply_models, Renderer_DIBR
-
-    model_dir = data_ref.model_dir
-    obj_ids = [data_ref.obj2id[_obj] for _obj in obj_names]
-    model_paths = [osp.join(model_dir, "obj_{:06d}.ply".format(obj_id)) for obj_id in obj_ids]
-
-    texture_paths = None
-    if data_ref.texture_paths is not None:
-        texture_paths = [osp.join(model_dir, "obj_{:06d}.png".format(obj_id)) for obj_id in obj_ids]
-    models = load_ply_models(
-        model_paths=model_paths,
-        texture_paths=texture_paths,
-        vertex_scale=data_ref.vertex_scale,
-        tex_resize=True,  # to reduce gpu memory usage
-        width=512,
-        height=512,
-    )
-    ren_DIBR = Renderer_DIBR(output_db=output_db, glctx_mode="manual", gpu_id=gpu_id)
-    return models, ren_DIBR
 
 
 def get_dibr_models_renderer(cfg, data_ref, obj_names, output_db=True, gpu_id=None):

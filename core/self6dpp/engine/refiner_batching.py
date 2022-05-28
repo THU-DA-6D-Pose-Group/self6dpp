@@ -148,7 +148,6 @@ def batch_updater(
     batch["zoom_K"] = get_K_crop_resize(batch["K"], crop_bboxes[:, :2], resize_ratios)
     # for rendering data
     batch["K_DIBR"] = batch["K"].clone()
-    batch["K_DIBR"][:, 1, 2] += cfg.DIBR.V_OFFSET  # HACK: DIBR renderer has some v offset bug!!
 
     # get zoomed obs data ---------------------------------------------------
     im_rois = torch.cat([batch["im_id"].view(-1, 1), crop_bboxes], dim=1)  # to crop and resize image_obs
