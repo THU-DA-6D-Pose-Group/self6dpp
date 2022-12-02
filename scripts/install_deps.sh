@@ -61,7 +61,6 @@ pip install ninja
 pip install black
 pip install docformatter
 pip install setproctitle
-pip install fastfunc
 pip install meshplex
 pip install OpenEXR
 pip install "vispy>=0.6.4"
