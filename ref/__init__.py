@@ -1,1 +1,1 @@
-from . import lm_full, lmo_full, ycbv, hb, hb_bdp, sphere_synt
+from . import lm_full, lmo_full, ycbv, hb, hb_bdp
