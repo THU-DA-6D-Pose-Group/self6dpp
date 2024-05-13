@@ -1,7 +1,8 @@
 #include <torch/extension.h>
 #include <ATen/cuda/CUDAContext.h>
 
-#include <THC/THC.h>
+// #include <THC/THC.h>
+#include <ATen/ATen.h>
 #include <THC/THCAtomics.cuh>
 #include <THC/THCDeviceUtils.cuh>
 #include <cfloat>
