@@ -45,7 +45,7 @@ datasets/
 * The trained models can be found at [ModelScope](https://www.modelscope.cn/models/wangg12/self6dpp_models/), [Pan.Baidu, pw: g1x6](https://pan.baidu.com/s/189T6j5OVFXiV7mbik441gQ?pwd=g1x6
 ), or [Onedrive](https://mailstsinghuaeducn-my.sharepoint.com/:f:/g/personal/liuxy21_mails_tsinghua_edu_cn/Eo_1M56pMMJHnIZa6M-VAqYB0z_01MIXrpXl6O2tjPQ4qA?e=uKYNkC). Download them and put them under the folder `./output`.
 
-* Some other resources (including `test_bboxes` and `image_sets`) can be found at [Pan.Baidu, pw: 8nWC](https://pan.baidu.com/s/1lfVXryDPVv3ujCQzUETdjg?pwd=8nWC), or  [Onedrive](https://mailstsinghuaeducn-my.sharepoint.com/:f:/g/personal/liuxy21_mails_tsinghua_edu_cn/Eo_1M56pMMJHnIZa6M-VAqYB0z_01MIXrpXl6O2tjPQ4qA?e=uKYNkC).
+* Some other resources (including `test_bboxes` and `image_sets`) can be found at [ModelScope](https://www.modelscope.cn/datasets/wangg12/self6dpp_data/files), [Pan.Baidu, pw: 8nWC](https://pan.baidu.com/s/1lfVXryDPVv3ujCQzUETdjg?pwd=8nWC), or  [Onedrive](https://mailstsinghuaeducn-my.sharepoint.com/:f:/g/personal/liuxy21_mails_tsinghua_edu_cn/Eo_1M56pMMJHnIZa6M-VAqYB0z_01MIXrpXl6O2tjPQ4qA?e=uKYNkC).
 
 
 ### Stage I: train the detector, pose estimator, and refiner using PBR synthetic data
