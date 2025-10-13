@@ -83,11 +83,11 @@ core/self6dpp/test_self6dpp.sh <config_path> <gpu_ids> (other args)
 ## Citation
 If you find this useful in your research, please consider citing:
 ```
-@article{Wang_2021_self6dpp,
+@article{Wang_self6dpp,
   title     = {Occlusion-Aware Self-Supervised Monocular {6D} Object Pose Estimation},
   author    = {Wang, Gu and Manhardt, Fabian and Liu, Xingyu and Ji, Xiangyang and Tombari, Federico},
   journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
-  year      = {2021},
+  year      = {2024},
   doi       = {10.1109/TPAMI.2021.3136301}
 }
 ```
